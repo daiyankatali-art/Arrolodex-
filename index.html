@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arrolodex - Array Contact List</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>Arro<span>lodex</span> 📇</h1>
+  <p class="tag">A contact list powered by arrays</p>
+
+  <div class="card">
+    <h2>Add a contact</h2>
+    <div class="form">
+      <input id="fName" placeholder="Name">
+      <input id="fPhone" type="tel" placeholder="Phone with country code, e.g. +234 801 234 5678" value="+233" minlength="10" maxlength="13">
+      <button class="main" id="bAdd">Save contact</button>
+    </div>
+    <p class="note" id="msg"></p>
+  </div>
+
+  <div class="card">
+    <h2>Contacts <small id="cnt" style="color:var(--muted);font-weight:400"></small></h2>
+    <input id="search" placeholder="Search by name or number...">
+    <div id="list"></div>
+  </div>
+
+  <div class="card">
+    <h2>Under the hood: the arrays</h2>
+    <pre id="code"></pre>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
